@@ -2,18 +2,19 @@
 @font-face {
   font-family: "Open Sans regular";
   src: local("OpenSans-Regular"),
-    url("/fonts/OpenSans-Regular.ttf") format("ttf"),
-    url("/fonts/OpenSans-Regular.woff") format("woff"),
-    url("/fonts/OpenSans-Regular.woff2") format("woff2");
+    url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans bold";
-  src: local("OpenSans-Bold"), url("/fonts/OpenSans-Bold.ttf") format("ttf"),
-    url("/fonts/OpenSans-Bold.woff") format("woff"),
-    url("/fonts/OpenSans-Bold.woff2") format("woff2");
+  src: local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: bold;
 }
@@ -46,9 +47,8 @@ body {
 /* HEADER */
 
 .header-wrap {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -56,7 +56,7 @@ body {
   background-color: #5a5c4b;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 }
 
 .header-wrap::before {
@@ -71,12 +71,12 @@ body {
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 1201px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   z-index: 2;
-  padding: 28px 15px 140px 15px;
+  padding: 25px 15px 130px 15px;
 }
 
 .header-logo {
@@ -102,7 +102,7 @@ body {
   list-style-type: none;
   font-size: 13px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans regular", sans-serif;
   font-weight: 400;
   color: #ffffff;
 }
@@ -122,7 +122,7 @@ body {
 
 .title {
   max-width: 700px;
-  margin: 100px auto 0;
+  margin: 102px auto 0;
 }
 
 .big-title {
@@ -143,7 +143,9 @@ body {
 
 .main-title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
+  font-family: "Open Sans bold", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -153,7 +155,7 @@ body {
 .main-title::after {
   content: "";
   display: block;
-  margin: 14px auto 0;
+  margin: 5px auto 0;
   width: 62px;
   height: 3px;
   background-color: #b59f5b;
@@ -170,7 +172,7 @@ body {
   width: calc(25% - 3px);
   min-height: 320px;
   margin-right: 3px;
-  padding: 16px 21px;
+  padding: 15px 20px 12px;
   background-color: #eff6f1;
   background-position: center center;
   background-size: cover;
@@ -196,7 +198,7 @@ body {
   position: relative;
   align-self: flex-end;
   box-sizing: content-box;
-  padding: 10%;
+  padding: 8% 8%;
   border: 3px solid #b59f5b;
   text-align: left;
   z-index: 2;
@@ -204,15 +206,14 @@ body {
 }
 
 .trend-list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
 .trend-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 18px;
   font-size: 14px;
+  font-family: "Open Sans bold", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -223,10 +224,11 @@ body {
 }
 
 .trend-title {
-  margin-top: 15px;
+  margin-top: 9px;
   font-size: 20px;
+  font-family: "Open Sans bold", sans-serif;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
   text-transform: uppercase;
 }
 
@@ -257,13 +259,14 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
-  margin-bottom: 65px;
+  margin-bottom: 63px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main {
   width: 66%;
+  line-height: 1.2;
 }
 
 .post-content {
@@ -279,7 +282,6 @@ body {
 .post-picture {
   display: block;
   width: 381px;
-  margin-right: 30px;
   background-color: #eff6f1;
 }
 
@@ -289,8 +291,8 @@ body {
 }
 
 .post-menu {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-family: "Open Sans bold", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: #b59f5b;
@@ -324,8 +326,8 @@ body {
   font-size: 20px;
   color: #0f0d0e;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-top: 11px;
+  margin-bottom: 31px;
   line-height: 1.2;
 }
 
@@ -342,12 +344,12 @@ body {
 .post-text-meta {
   display: flex;
   align-items: center;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .date {
-  font-family: "Open Sans", sans-serif;
-  font-style: 400;
+  font-family: "Open Sans regular", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   color: #888888;
 }
@@ -357,17 +359,17 @@ body {
 }
 
 .author {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans bold", sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #000000;
 }
 
 .post-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans regular", sans-serif;
   font-style: 400;
   font-size: 15px;
-  line-height: 1.2;
+  line-height: 1.3;
   width: 367px;
   margin-bottom: 20px;
 }
@@ -376,6 +378,7 @@ body {
 
 .side-bar {
   width: 272px;
+  line-height: 1;
 }
 
 .news-title {
@@ -393,7 +396,7 @@ body {
   background-color: #b59f5b;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   margin-top: 13px;
   width: 66px;
   height: 3px;
@@ -402,7 +405,7 @@ body {
 .side-picture {
   display: block;
   width: 70px;
-  height: 70px;
+  height: 68px;
   margin-right: 20px;
 }
 
@@ -411,7 +414,7 @@ body {
 }
 
 .side-block:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .side-picture {
@@ -420,7 +423,7 @@ body {
 }
 
 .date-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans regular", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #000000;
@@ -547,7 +550,7 @@ body {
   font-size: 12px;
   color: #0f0d0e;
   width: 271px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 
 .tags-item {
@@ -584,7 +587,7 @@ body {
 }
 
 .categories-list {
-  font-family: "Open Sans bold";
+  font-family: "Open Sans bold", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #000000;
@@ -619,6 +622,12 @@ body {
 
 /* SHOP */
 
+.shop-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+
 .shop-wrap {
   display: flex;
   justify-content: space-between;
@@ -646,19 +655,21 @@ body {
   position: relative;
   z-index: 2;
   flex-grow: 2;
-  padding: 55px 20px 20px;
+  padding: 44px 20px 20px;
   border: 3px solid #b59f5b;
   text-align: left;
+  line-height: 1.3;
   text-decoration: none;
 }
 
 .product-description {
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .product-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "Open Sans bold", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -668,6 +679,8 @@ body {
 .product-text {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans regular", sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.4;
 }
@@ -696,8 +709,9 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: start;
+  font-family: "Open Sans bold", sans-serif;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
 }
 
 .old-price {
@@ -709,14 +723,14 @@ body {
 
 .new-price {
   margin: 0;
-  padding: 0 0 12px;
+  padding: 0;
   font-size: 20px;
 }
 
 .shop-link {
   display: block;
   box-sizing: content-box;
-  padding: 1.2em 1.7em;
+  padding: 16px 27px;
   background: #b59f5b;
   text-decoration: none;
   text-align: center;
@@ -736,10 +750,11 @@ body {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
+  padding: 0 15px;
 }
 
 .social {
-  padding: 30px;
+  padding: 28px;
   text-align: center;
   background-color: #f4f7f6;
 }
@@ -759,12 +774,12 @@ body {
 
 .social-link {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: center;
-  padding: 30px 15px;
+  padding: 0 15px;
 }
 
 .social-link:not(:last-child) {
@@ -782,9 +797,11 @@ body {
 .social-icon-facebook {
   background-image: url("../svg/002-facebook-logo.svg");
 }
+
 .social-icon-instagram {
   background-image: url("../svg/005-instagram.svg");
 }
+
 .social-icon-tumblr {
   background-image: url("../svg/003-tumblr.svg");
 }
@@ -792,7 +809,8 @@ body {
 /* СOPYRIGHT */
 
 .copyright {
-  width: 1200px;
+  max-width: 1200px;
+  margin-top: 70px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -804,8 +822,8 @@ body {
 }
 
 .property {
-  font-family: Open Sans, Arial;
-  font-weight: normal;
+  font-family: "Open Sans bold", sans-serif;
+  font-weight: 700;
   font-size: 13px;
   color: #dddddd;
   margin-right: auto;
@@ -863,7 +881,7 @@ body {
   top: -25px;
   width: 20px;
   height: 20px;
-  background: url("../svg/form-x.svg") center center / cover no-repeat;
+  background: url("./svg/form-x.svg") center center / cover no-repeat;
   border: none;
 }
 
@@ -885,10 +903,11 @@ body {
   height: 48px;
   border: none;
   background-color: #f4f7f6;
-  background-image: url("../svg/form-arrows.svg");
+  background-image: url("./svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-size: 8px;
   background-position: right 12px center;
+  resize: none;
   -webkit-appearance: none;
 }
 
@@ -911,8 +930,7 @@ body {
   vertical-align: middle;
   width: 16px;
   height: 16px;
-  background: url("../svg/form-empty-circle.svg") center center / cover
-    no-repeat;
+  background: url("./svg/form-empty-circle.svg") center center / cover no-repeat;
 }
 
 .popup-text-field {
@@ -944,16 +962,19 @@ body {
   color: #ffffff;
 }
 
+/* TABLET */
+
 @media (min-width: 641px) and (max-width: 1200px) {
   /* Header*/
 
   .header-wrap {
     position: relative;
     min-width: 641px;
-    margin-bottom: 50px;
-    padding: 50px 0px 120px;
+    max-width: 1200px;
+    margin-bottom: 45px;
+    padding: 45px 0px 115px;
     color: #ffffff;
-    background-image: url("../images/banner-bg-tablet.jpg");
+    background-image: url("./images/banner-bg-tablet.jpg");
   }
 
   .header-wrap::before {
@@ -1024,11 +1045,13 @@ body {
   }
 
   .title {
-    margin: 102px auto 0;
-    width: 100%;
+    max-width: 605px;
+    margin: 80px auto 0;
   }
 
   .big-title {
+    font-family: "Open Sans bold", sans-serif;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.38;
   }
@@ -1036,16 +1059,19 @@ body {
   /* Trends */
 
   .trends-container {
-    margin-bottom: 50px;
+    max-width: 1200px;
+    min-width: 641px;
+    margin-bottom: 45px;
   }
 
   .main-title {
+    font-family: "Open Sans bold", sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 1.3;
   }
 
   .trends-content {
-    min-width: 641px;
     flex-wrap: wrap;
   }
 
@@ -1054,6 +1080,7 @@ body {
     width: calc(50% - 3px);
     min-height: 248px;
     margin-bottom: 3px;
+    padding: 15px 20px;
   }
 
   .trend-post::before {
@@ -1067,18 +1094,28 @@ body {
     opacity: 0.6;
   }
 
+  .trend-text {
+    padding: 9% 7%;
+  }
+
+  .trend-title {
+    font-family: "Open Sans bold", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
   /* Page-container */
   .page-container {
     padding: 0 35px;
   }
+
   .main {
-    width: 55%;
+    width: 60%;
     margin-right: 5%;
   }
 
   .post-content {
     flex-direction: column;
-    margin-bottom: 35px;
   }
 
   .post-content::after {
@@ -1088,24 +1125,35 @@ body {
     background: #eeeeee;
   }
 
+  .post-content:not(:last-child) {
+    margin-bottom: 41px;
+  }
+
   .post-picture {
     display: block;
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+  }
+
+  .post-header {
+    margin-left: 0;
   }
 
   .post-title {
+    margin-top: 9px;
+    margin-bottom: 31;
+    font-family: "Open Sans bold", sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 1.3;
   }
 
   .post-text-meta {
-    margin-top: 36px;
     font-size: 12px;
   }
 
   .post-text {
-    margin-top: 40px;
+    margin-top: 31px;
     line-height: 1.47;
     color: #0f0d0e;
   }
@@ -1119,10 +1167,7 @@ body {
   }
 
   /* Shop */
-  .shop-container {
-  }
-  .main-title {
-  }
+
   .shop-wrap {
     flex-wrap: wrap;
     padding: 0 35px;
@@ -1149,12 +1194,14 @@ body {
 /* MOBILE */
 
 @media (max-width: 640px) {
+
   /* HEADER */
   .header-wrap {
     position: relative;
     min-width: 320px;
-    margin-bottom: 44px;
-    padding: 32px 0px 216px;
+    max-width: 640px;
+    margin-bottom: 42px;
+    padding: 32px 0px 210px;
     background-image: url("../images/banner-mobile.jpg");
   }
 
@@ -1167,13 +1214,14 @@ body {
 
   .menu {
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .header-logo {
     width: 82%;
     order: 1;
   }
+
   .header-menu {
     align-self: flex-end;
   }
@@ -1225,7 +1273,7 @@ body {
   }
 
   .title {
-    margin: 45px auto 0;
+    margin: 0 auto 0;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -1261,6 +1309,14 @@ body {
     margin-bottom: 3px;
   }
 
+  .trend-item {
+    font-size: 16px;
+  }
+
+  .trend-title {
+    font-size: 16px;
+  }
+
   /* PAGE-CONTAINER */
 
   .page-container {
@@ -1279,18 +1335,27 @@ body {
     border-bottom: 3px #eeeeee solid;
   }
 
+  .post-content:not(:last-child) {
+    margin-bottom: 32px;
+  }
   .post-picture {
     width: 100%;
     margin-bottom: 14px;
   }
 
+  .post-header {
+    margin-left: 0;
+  }
+
   .post-title {
+    margin-top: 7px;
+    margin-bottom: 15px;
     font-size: 17px;
     line-height: 1.3;
   }
 
   .post-text-meta {
-    margin-top: 26px;
+    margin-bottom: 18px;
   }
 
   .author {
@@ -1311,14 +1376,20 @@ body {
 
   .subscription {
     margin-top: 46px;
-  }
-
-  .tags {
-    margin-top: 46px;
+    margin-bottom: 35px;
   }
 
   .categories {
-    margin-top: 46px;
+    margin-top: 0;
+  }
+
+  .categories-items {
+    padding: 17px 0 12px;
+  }
+
+  .tags-list {
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   /* Shop */
@@ -1330,5 +1401,16 @@ body {
   .shop-content {
     width: 100%;
     margin-bottom: 28px;
+  }
+
+  .main-title {
+    margin-bottom: 27px;
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .social {
+    padding: 28px 0;
   }
 }
