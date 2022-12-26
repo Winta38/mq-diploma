@@ -11,12 +11,11 @@
 
 @font-face {
   font-family: "Open Sans bold";
-  src: local("OpenSans-Bold"),
-    url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+  src: local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.ttf") format("ttf"),
     url("../fonts/OpenSans-Bold.woff") format("woff"),
     url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 * {
@@ -367,7 +366,7 @@ body {
 
 .post-text {
   font-family: "Open Sans regular", sans-serif;
-  font-style: 400;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.3;
   width: 367px;
@@ -974,7 +973,7 @@ body {
     margin-bottom: 45px;
     padding: 45px 0px 115px;
     color: #ffffff;
-    background-image: url("./images/banner-bg-tablet.jpg");
+    background-image: url("../images/banner-bg-tablet.jpg");
   }
 
   .header-wrap::before {
@@ -990,7 +989,7 @@ body {
 
   .header-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 35px;
   }
@@ -1106,6 +1105,7 @@ body {
 
   /* Page-container */
   .page-container {
+    max-width: 700px;
     padding: 0 35px;
   }
 
@@ -1141,7 +1141,7 @@ body {
 
   .post-title {
     margin-top: 9px;
-    margin-bottom: 31;
+    margin-bottom: 31px;
     font-family: "Open Sans bold", sans-serif;
     font-weight: 700;
     font-size: 17px;
@@ -1187,6 +1187,7 @@ body {
 
   /* Footer */
   .footer {
+    max-width: 700px;
     padding: 0 35px;
   }
 }
@@ -1194,7 +1195,6 @@ body {
 /* MOBILE */
 
 @media (max-width: 640px) {
-
   /* HEADER */
   .header-wrap {
     position: relative;
