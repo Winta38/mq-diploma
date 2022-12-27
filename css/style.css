@@ -989,7 +989,7 @@ body {
 
   .header-container {
     position: relative;
-    max-width: 641px;
+    max-width: 699px;
     margin: 0 auto;
     padding: 0 35px;
   }
@@ -1105,7 +1105,7 @@ body {
 
   /* Page-container */
   .page-container {
-    max-width: 641px;
+    max-width: 699px;
     padding: 0 35px;
   }
 
@@ -1187,7 +1187,7 @@ body {
 
   /* Footer */
   .footer {
-    max-width: 641px;
+    max-width: 699px;
     padding: 0 35px;
   }
 }
@@ -1207,7 +1207,7 @@ body {
 
   .header-container {
     position: relative;
-    max-width: 640px;
+    max-width: 331px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -1410,7 +1410,7 @@ body {
 
   /* Footer */
   .footer {
-    max-width: 640px;
+    max-width: 331px;
   }
 
   .social {
